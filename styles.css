@@ -1,0 +1,23 @@
+a:link 
+	{
+		color: #888888; text-decoration :none;
+	}
+a:visited 
+	{
+		color: #888888; text-decoration :none;
+	}
+a:hover 
+	{
+		color: #000000; text-decoration :none;
+	}
+
+.input-box
+{
+color: #828282;
+background: #D6D5D5;
+border: #518CA3 solid 1px
+}
+.form1
+{
+vertical-align: middle;
+}
