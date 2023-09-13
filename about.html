@@ -10,6 +10,7 @@
 <meta property="og:description" content="new music soon">
 <meta property="og:image" content="https://learke.github.io/images/lainclock.jpeg">
 
+
 <style>
 @font-face { font-family: Lain; src: url('images/dr.otf'); } 
 @font-face { font-family: tape; src: url('images/tape.ttf'); }
@@ -34,82 +35,77 @@ h1 {
   color: white;
   font-family: Lain
 }
-.bodyText {
-  line-height: 2 ;
-  font-family: tape;
-  color: white;
-  text-align: inherit;
-} 
+
+
+@media screen and (min-width: 601px) {
+  		.bodyText {
+    		font-size: 15px;
+  			}
+		}
+
+	@media screen and (max-width: 600px) {
+  		.bodyText {
+    		font-size: 0.5vw;
+ 			}
+		}
+	
+	/*TITLE*/
+	@media screen and (min-width: 601px) {
+  		.title {
+    		font-size: 120px;
+  			}
+		}
+
+	@media screen and (max-width: 600px) {
+  		.title {
+    		font-size: 10vw;
+ 			}
+		}
+
+
+	.bodyText {
+	  line-height: 2 ;
+	  font-family: tape;
+	  color: white;
+	  text-align: inherit;
+	} 
+
+	/*mobile scaling*/
+	#unfloated-container{
+    width: 100%;
+	}
+
+	#banner img {
+  	max-width: 100%;
+  	height: auto;
+	}
+
+	#spotify iframe {
+ 	max-width: 133%;
+  	height: 40%;
+	}
   </style>
 </HEAD>
+<!--Title-->
+<div id="#unfloated-container">
+	<center>
+		<p class=".title" style="font-size:5vw; font-family: Lain; color:whitesmoke; line-height: 1;">About<br></p>
+	</center>
+</div>
 
-	<table align="center">
-		<tr>
-			<th>
-				<img src="images/EDGEleft.jpg">
-			</th>
-			<th style="width:696px">
-				<img src="images/index_02.jpg">
-			</th>
-			<th>
-				<img src="images/EDGEright.jpg">
-			</th>
-		</tr>
-		<tr>
-		  <th>
-			<img src="images/borderleft.jpg">
-		  </th>
-		  <th style="width:696px;">
-				<a href="https://linktr.ee/learke" target="_blank">
-					<img src="images/banner.jpg" >
-				</a>
-		  </th>
-		  <th>
-			<img src="images/borderright.jpg">
-		  </th>
-		</tr>
-		<tr>
-		  <td>
-			<img src="images/EDGEleft.jpg">
-		  </td>
-		  <td style="width:696px">
-				<img src="images/INVindex_02.jpg">
-		  </td>
-		  <td>
-			<img src="images/EDGEright.jpg">
-		  </td>
-		</tr>
-
-		<tr>
-		  <td></td>
-		  <td>
-			<center>
-				<p style="font-size:60px; font-family: Lain; color:whitesmoke; line-height: 2;">About<br></p>
-			</center>
-		  </td>
-		  <td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td>
+<div id="#unfloated-container">
+			<!--About-->
 				<center>
-					<p class="bodyText">I'm a 20 year old musician from Queensland, Australia.<br>I also code and make games, as well as occasionally stream!!<br>I will have all my links down below if you want to check them out!<br><br><br>click the banner or</p><a href="https://linktr.ee/learke" target="_blank"><p class="bodyText">->HERE<-</p></a><p class="bodyText">to access my linktree!<br><br><br>This website used to suck and run on a template lol<br>but i've realised that the low budget aesthetic is so much cooler<br>this site is still under construction and will have a music update page soon<br><br>For any press, please click</p><a href="https://drive.google.com/drive/folders/12DLmfUCvrNXc1m4jRv_V6pL0uOD-Y4Mj?usp=sharing" target="_blank"><p class="bodyText">->HERE<-</p></a><p class="bodyText">for my Electronic Press Kit</p></p>
+					<p class="bodyText">I'm a 20 year old musician from Queensland, Australia.<br>I also code and make games, as well as occasionally stream!!<br>I will have all my links down below if you want to check them out!<br><br><br>click</p><a href="https://linktr.ee/learke" target="_blank"><p class="bodyText" style="font-style: italic; color: aqua;">->HERE<-</p></a><p class="bodyText">to access my linktree!<br><br><br>This website used to suck and run on a template lol<br>but i've realised that the low budget aesthetic is so much cooler<br>this site is still under construction and will have a music update page soon<br><br>For any press, please click</p><a href="https://drive.google.com/drive/folders/12DLmfUCvrNXc1m4jRv_V6pL0uOD-Y4Mj?usp=sharing" target="_blank"><p class="bodyText" style="font-style: italic; color: aqua">->HERE<-</p></a><p class="bodyText">for my Electronic Press Kit</p></p>
 				</center>
-			</td>
-		</tr>
-		<br>
-		<tr>
-			<td></td>
-			<td>
 				<br>
+
+			<!--Return Home-->
 			  <center>
 				<a href="index.html">
 					<p style="font-size:45px; font-family: Lain; color:whitesmoke; line-height: 1;">Return Home<br></p>
 				</a>
 			  </center>
-			</td>
-			<td></td>
-		  </tr>
-	  </table> 
+		</div>
 </BODY>
 </HTML>

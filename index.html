@@ -30,13 +30,8 @@
 	<meta name="description" content="Updates and news about Learke.">
 	
 	<!--Mobile Scaling?-->
-	<meta name="viewport" content="width=1280, initial-scale=1">
-	<script>
-	var siteWidth = 1280;
-	var scale = screen.width /siteWidth;
-	
-	document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
-	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	
 	<style>
 	@font-face { font-family: Lain; src: url('images/dr.otf'); } 
@@ -62,15 +57,59 @@
 	  color: white;
 	  font-family: Lain
 	}
+
+	@media screen and (min-width: 601px) {
+  		.bodyText {
+    		font-size: 30px;
+  			}
+		}
+
+	@media screen and (max-width: 600px) {
+  		div.example {
+    		font-size: 2.5vw;
+ 			}
+		}
+	
+	/*TITLE*/
+	@media screen and (min-width: 601px) {
+  		.title {
+    		font-size: 120px;
+  			}
+		}
+
+	@media screen and (max-width: 600px) {
+  		.title {
+    		font-size: 5vw;
+ 			}
+		}
+
+
 	.bodyText {
 	  line-height: 2 ;
 	  font-family: tape;
 	  color: white;
 	  text-align: inherit;
 	} 
+
+	/*mobile scaling*/
+	#unfloated-container{
+    width: 100%;
+	}
+
+	#banner img {
+  	max-width: 100%;
+  	height: auto;
+	}
+
+	#spotify iframe {
+	width: 50vw;
+	height: 70vw;
+ 	max-width: 133%;
+  	max-height: 70%;
+	}
 	  </style>
 	</HEAD>
-	
+	<div id="banner">
 		<table align="center">
 			<!--Banner-->
 			<tr>
@@ -108,33 +147,38 @@
 				<img src="images/EDGEright.jpg">
 			  </td>
 			</tr>
-	</table>
-<!--hello-->
-<center>
-	<p style="font-size:60px; font-family: Lain; color:whitesmoke; line-height: 2;">Hello, I'm Learke<br></h1>
-</center>
+		</table>
+	</div>
+<div id="#unfloated-container">
+	<!--hello-->
+	<center>
+		<p class=".title" style="font-size:5vw; font-family: Lain; color:whitesmoke; line-height: 1;">Hello, I'm Learke<br></h1>
+	</center>
 	
-<!--Spotify & other platforms-->
-<center>
-		<p class="bodyText">Latest Release:</p>
-	<br>
-		<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2TZUpntFcvdMEdYKOvmIc2?utm_source=generator" width="66.6%" height="494" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-	<br>
-		<a href="https://ffm.to/idtyuwim" target="_blank">
-			<p class="bodyText">Other Platforms</p>
+	<!--Spotify & other platforms-->
+	<div id="spotify">
+		<center>
+				<p class="bodyText">Latest Release:</p>
+			<br>
+				<iframe style="border-radius:12px; max-width: 696px; max-height: 464px;" src="https://open.spotify.com/embed/album/2TZUpntFcvdMEdYKOvmIc2?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<a href="https://ffm.to/idtyuwim" target="_blank">
+					<p class="bodyText" style="font-style: italic; color: aqua;">Other Platforms</p>
+				</a>
+		</center>
+	</div>
+		<center>
+			<audio style="width:66vw; max-width: 696px;"  controls>
+				<source src="audio/snippet.mp3" type="audio/mp3">
+				Your browser does not support the audio tag loser
+			</audio>
+		<br>
+	
+	<!--about link-->
+		<a href="about.html">
+			<p class="bodyText" style="font-family: Lain; font-size:45px">About Me</p>
 		</a>
-	<br>
-		<audio controls>
-			<source  src="audio/snippet.mp3" type="audio/mp3">
-			Your browser does not support the audio tag loser
-		</audio>
-	<br>
-	
-<!--about link-->
-	<a href="about.html">
-		<p class="bodyText" style="font-family: Lain; font-size:45px">About Me</p>
-	</a>
-</center>
-<!--to find an unreleased track, add /audio/soLONG.mp3 to the URL-->
+	</center>
+	<!--to find an unreleased track, add /audio/soLONG.mp3 to the URL-->
+</div>
 	</BODY>
 	</HTML>
