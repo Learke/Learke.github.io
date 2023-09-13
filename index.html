@@ -82,6 +82,20 @@
     		font-size: 5vw;
  			}
 		}
+	
+	@media screen and (min-width: 601px) {
+  		iframe {
+    		max-height: 500;
+  			}
+		}
+
+	@media screen and (max-width: 600px) {
+  		iframe {
+			min-height: 400px;
+			height: 75vw;
+ 			}
+		}
+
 
 
 	.bodyText {
@@ -102,11 +116,10 @@
 	}
 
 	#spotify iframe {
-	width: 50vw;
-	height: 70vw;
- 	max-width: 133%;
+	width: 75vw;
+	height: 55vw;
+ 	max-width: 100%;
   	max-height: 100%;
-	min-height: 100%;
 	}
 	  </style>
 	</HEAD>
@@ -160,15 +173,15 @@
 	<div id="spotify">
 		<center>
 				<p class="bodyText">Latest Release:</p>
-			<br>
-				<iframe style="border-radius:12px; min-width:75vw ; max-width: 696px; min-height: 400px;" src="https://open.spotify.com/embed/album/2TZUpntFcvdMEdYKOvmIc2?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-				<a href="https://ffm.to/idtyuwim" target="_blank">
-					<p class="bodyText" style="font-style: italic; color: aqua;">Other Platforms</p>
+			<iframe style="border-radius:0px" src="https://open.spotify.com/embed/album/2TZUpntFcvdMEdYKOvmIc2?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<a href="https://ffm.to/idtyuwim" target="_blank">
+					<p class="bodyText" style="font-style: italic; color: aqua; line-height: 1">Other Platforms</p>
 				</a>
 		</center>
 	</div>
+	<br>
 		<center>
-			<audio style="width:66vw; max-width: 696px;"  controls>
+			<audio style="width:66vw; max-width: 696px; line-height: 5;"  controls>
 				<source src="audio/snippet.mp3" type="audio/mp3">
 				Your browser does not support the audio tag loser
 			</audio>
@@ -176,7 +189,7 @@
 	
 	<!--about link-->
 		<a href="about.html">
-			<p class="bodyText" style="font-family: Lain; font-size:45px">About Me</p>
+			<p class="bodyText" style="font-family: Lain; font-size:45px;">About Me</p>
 		</a>
 	</center>
 	<!--to find an unreleased track, add /audio/soLONG.mp3 to the URL-->
