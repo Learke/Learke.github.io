@@ -28,7 +28,21 @@
 	<style>
 	@font-face { font-family: Lain; src: url('fonts/Astra.ttf'); } 
 	@font-face { font-family: tape; src: url('images/tape.ttf'); }
-	
+	body {
+            animation: fadeInAnimation ease 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
 	th, td, tr {
 		padding-top: 0px;
 		padding-bottom: 0px;
